@@ -1,0 +1,113 @@
+/* ============================= */
+/* EDITAR PERFIL BUSCADOR */
+/* ============================= */
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* CARD */
+
+.editar-container{
+    background:#1e293b;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    width:420px;
+    max-width:90%;
+}
+
+/* TÍTULO */
+
+.editar-container h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:25px;
+}
+
+/* INPUTS */
+
+.editar-container input,
+.editar-container textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:none;
+    border-radius:6px;
+    outline:none;
+    background:white;
+    color: rgb(78, 78, 78);
+    border:1px solid rgb(143, 143, 143);
+}
+
+/* TEXTAREA */
+
+.editar-container textarea{
+    resize:none;
+    height:100px;
+}
+
+/* CAMPOS EXTRA (VALOR POR HORA / SALÁRIO) */
+.perfil-extra {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.perfil-extra p {
+    flex:1 1 48%;
+}
+
+/* BOTÕES */
+
+.editar-botoes{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.editar-botoes button{
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:#38bdf8;
+    color:black;
+    font-size:14px;
+    transition:0.25s;
+}
+
+.editar-botoes button:hover{
+    background:#0ea5e9;
+    transform:scale(1.03);
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+    background:#64748b;
+    color:white;
+}
+
+.btn-voltar:hover{
+    background:#475569;
+}
+
+/* MENSAGEM */
+
+.mensagem{
+    padding:10px;
+    border-radius:6px;
+    text-align:center;
+    margin-bottom:15px;
+    background:#16a34a;
+    color:white;
+}

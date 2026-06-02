@@ -1,0 +1,77 @@
+/* ============================= */
+/* PÁGINA DETALHE DO SERVIÇO */
+/* ============================= */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* CENTRALIZA A PÁGINA */
+
+.servico-container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+/* CARD */
+
+.servico-card{
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+max-width:600px;
+width:90%;
+text-align:center;
+}
+
+/* TITULO */
+
+.servico-card h1{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+/* TEXTOS */
+
+.servico-card p{
+color:#cbd5f5;
+margin:8px 0;
+line-height:1.6;
+}
+
+/* DESCRIÇÃO */
+
+.servico-descricao{
+margin-top:10px;
+margin-bottom:20px;
+}
+
+/* BOTÕES */
+
+.servico-botoes{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.servico-botoes button{
+padding:10px 15px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#38bdf8;
+color:black;
+transition:0.3s;
+}
+
+.servico-botoes button:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}

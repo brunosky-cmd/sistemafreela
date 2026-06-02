@@ -1,0 +1,111 @@
+/* ============================= */
+/* PÁGINA DE PERFIL UNIFICADA */
+/* ============================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CARD DO PERFIL */
+.perfil-container {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* TÍTULO */
+.perfil-container h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+/* TEXTOS */
+.perfil-container p {
+    color: #cbd5f5;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* SOBRE */
+.perfil-sobre {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #111827;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* CAMPOS ADICIONAIS (VALOR POR HORA / SALÁRIO) */
+.perfil-container .perfil-extra {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.perfil-container .perfil-extra p {
+    flex: 1 1 45%;
+}
+
+/* BOTÕES */
+.perfil-botoes {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.perfil-botoes button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #38bdf8;
+    color: black;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.perfil-botoes button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+    background: #64748b;
+    color: white;
+}
+
+.btn-voltar:hover {
+    background: #475569;
+}
+
+.btn-excluir {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #b91c1c; /* vermelho forte */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.25s ease;
+}
+
+.btn-excluir:hover {
+    background: #7f1d1d;
+    transform: scale(1.05);
+}

@@ -1,0 +1,105 @@
+/* ============================= */
+/* LOGIN */
+/* ============================= */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+color:white;
+}
+
+/* CARD LOGIN */
+
+.login-box{
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+box-shadow:0px 10px 25px rgba(0,0,0,0.5);
+width:350px;
+max-width:90%;
+text-align:center;
+transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.login-box:hover{
+transform:translateY(-5px);
+box-shadow:0px 15px 35px rgba(0,0,0,0.7);
+}
+
+/* TÍTULO */
+
+.login-box h2{
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+/* INPUTS */
+
+.login-box input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #334155;
+background:#0f172a;
+color:white;
+font-size:14px;
+box-sizing:border-box;
+}
+
+.login-box input:focus{
+border-color:#38bdf8;
+outline:none;
+}
+
+/* BOTÃO LOGIN */
+
+.btn{
+width:100%;
+padding:12px;
+background:#38bdf8;
+color:black;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+transition:0.25s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:scale(1.03);
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#64748b;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+color:white;
+transition:0.25s;
+}
+
+.btn-voltar:hover{
+background:#475569;
+}
+
+/* TEXTO */
+
+.login-box p{
+font-size:14px;
+margin:10px 0;
+color:#cbd5f5;
+}

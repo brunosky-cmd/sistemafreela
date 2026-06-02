@@ -1,0 +1,223 @@
+/* RESET IMPORTANTE */
+*{
+    box-sizing: border-box;
+}
+
+/* EVITA SCROLL HORIZONTAL */
+html, body{
+    overflow-x: hidden;
+}
+
+/* FUNDO DA PÁGINA */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* GRID DE SERVIÇOS */
+.servicos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+/* CARD */
+.servico-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+    text-align:left;
+}
+
+/* HOVER CARD */
+.servico-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* TÍTULO */
+.servico-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+/* TEXTO DOS CARDS */
+.servico-card p{
+    color:#cbd5f5;
+    margin:5px 0;
+    line-height:1.4;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+}
+
+/* BOTÕES DENTRO DOS CARDS */
+.botoes-card{
+    margin-top:15px;
+}
+
+.botoes-card a{
+    text-decoration:none;
+}
+
+
+/* ========================= */
+/* BOTÃO EDITAR */
+/* ========================= */
+
+.servico-card .ms-btn{
+width:100%;
+padding:12px;
+background: #38bdf8;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+transition:all 0.25s ease;
+}
+
+/* HOVER EDITAR */
+.servico-card .ms-btn:hover{
+background:#426ada !important;
+transform:scale(1.05);
+}
+
+
+/* ========================= */
+/* BOTÃO EXCLUIR */
+/* ========================= */
+
+.servico-card .ms-btn-excluir{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:#ef4444;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    color:white;
+    transition:all 0.3s ease;
+}
+
+.servico-card .ms-btn-excluir:hover{
+    background:#b91c1c;
+    transform:scale(1.05);
+}
+
+/* ========================= */
+/* BOTÃO VER CANDIDATURAS */
+/* ========================= */
+
+.servico-card .btn-candidaturas{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:#22c55e; /* verde */
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    color:white;
+    transition:all 0.3s ease;
+}
+
+/* HOVER BOTÃO CANDIDATURAS */
+
+.servico-card .btn-candidaturas:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+}
+
+/* MENSAGEM DE NENHUM SERVIÇO */
+.sem-servicos{
+    color:#94a3b8;
+    margin-top:30px;
+    font-size:18px;
+}
+
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.top-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#1e293b;
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:100;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* BOTÃO VOLTAR */
+.ms-btn-top-voltar{
+    padding:10px 20px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    transition:background 0.3s;
+}
+
+.ms-btn-top-voltar:hover{
+    background:#b91c1c;
+}
+
+/* BOTÃO PERFIL */
+.ms-btn-top{
+    padding:10px 20px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    transition:background 0.3s;
+}
+
+.ms-btn-top:hover{
+    background:#45a049;
+}
+
+
+/* ========================= */
+/* BOTÃO CRIAR SERVIÇO */
+/* ========================= */
+
+.btn-criar-servico{
+    margin-left:10px;
+    padding:10px 18px;
+    background:#22c55e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    transition:all 0.3s ease;
+}
+
+.btn-criar-servico:hover{
+    background:#16a34a;
+    transform:scale(1.05);
+}

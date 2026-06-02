@@ -1,0 +1,125 @@
+/* ============================= */
+/* CADASTRO */
+/* ============================= */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+margin:0;
+color:white;
+}
+
+/* CAIXA DO CADASTRO */
+
+.cadastro-box{
+background:#1e293b;
+padding:40px;
+border-radius:12px;
+box-shadow:0px 10px 25px rgba(0,0,0,0.5);
+width:400px;
+max-width:90%;
+text-align:center;
+transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.cadastro-box:hover{
+transform:translateY(-5px);
+box-shadow:0px 15px 35px rgba(0,0,0,0.7);
+}
+
+/* TÍTULO */
+
+.cadastro-box h2{
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+/* CAMPOS */
+
+.cadastro-box input,
+.cadastro-box select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #334155;
+box-sizing:border-box;
+font-size:14px;
+background:#0f172a;
+color:white;
+}
+
+/* FOCO */
+
+.cadastro-box input:focus,
+.cadastro-box select:focus{
+border-color:#38bdf8;
+outline:none;
+}
+
+/* BOTÃO CADASTRAR */
+
+.btn{
+width:100%;
+padding:12px;
+background:#38bdf8;
+color:black;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+transition:0.25s;
+}
+
+.btn:hover{
+background:#0ea5e9;
+transform:scale(1.03);
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#64748b;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+color:white;
+transition:0.25s;
+}
+
+.btn-voltar:hover{
+background:#475569;
+}
+
+/* TEXTOS */
+
+.cadastro-box p{
+font-size:14px;
+margin:10px 0;
+color:#cbd5f5;
+}
+
+/* MENSAGENS */
+
+.sucesso{
+background:#16a34a;
+padding:10px;
+border-radius:6px;
+font-weight:bold;
+}
+
+.erro{
+background:#dc2626;
+padding:10px;
+border-radius:6px;
+font-weight:bold;
+}
