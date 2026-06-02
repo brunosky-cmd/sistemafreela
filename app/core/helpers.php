@@ -91,10 +91,10 @@ function view(string $template, array $data = []): void
 
 function modalidadeBanco(string $value): string
 {
-    return $value === 'HÃ­brido' ? 'Hï½rido' : $value;
+    return $value;
 }
 
 function modalidadeLabel(?string $value): string
 {
-    return $value === 'Hï½rido' ? 'HÃ­brido' : ($value ?? '');
+    return $value ?? '';
 }

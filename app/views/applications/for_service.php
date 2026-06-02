@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 
 <div class="container">
 
-<h2>Candidaturas para este serviÃ§o</h2>
+<h2>Candidaturas para este serviço</h2>
 
 <?php if(count($candidaturas) > 0): ?>
     <?php foreach($candidaturas as $c): ?>
@@ -27,7 +27,7 @@
         <p><b>Email:</b> <?php echo e($c['email']); ?></p>
         <p><b>Quem sou:</b> <?php echo e($c['quem_sou'] ?? '-'); ?></p>
         <p><b>Cidade:</b> <?php echo e($c['cidade'] ?? '-'); ?></p>
-        <p><b>Valor por hora (R$):</b> <?php echo e($c['valor_hora'] ?? '-'); ?> | <b>SalÃ¡rio CLT (R$):</b> <?php echo e($c['salario'] ?? '-'); ?></p>
+        <p><b>Valor por hora (R$):</b> <?php echo e($c['valor_hora'] ?? '-'); ?> | <b>Salário CLT (R$):</b> <?php echo e($c['salario'] ?? '-'); ?></p>
         <p class="candidatura-status <?php echo e($status_class); ?>">Status: <?php echo e(ucfirst($status)); ?></p>
 
         <div class="botoes-candidatura">
@@ -42,7 +42,7 @@
     <p class="sem-candidaturas">Nenhuma candidatura ainda.</p>
 <?php endif; ?>
 
-<a href="<?php echo url('/vagas/minhas'); ?>"><button class="btn-voltar">Voltar a ServiÃ§os</button></a>
+<a href="<?php echo url('/vagas/minhas'); ?>"><button class="btn-voltar">Voltar a Serviços</button></a>
 
 </div>
 </body>

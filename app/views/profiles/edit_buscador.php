@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -47,13 +47,13 @@
                 <input type="number" step="0.01" name="valor_hora" value="<?php echo e($perfil['valor_hora'] ?? ''); ?>">
             </p>
             <p>
-                <label>SalÃ¡rio CLT (R$):</label>
+                <label>Salário CLT (R$):</label>
                 <input type="number" step="0.01" name="salario" value="<?php echo e($perfil['salario'] ?? ''); ?>">
             </p>
         </div>
 
         <div class="editar-botoes">
-            <button type="submit">Salvar AlteraÃ§Ãµes</button>
+            <button type="submit">Salvar Alterações</button>
             <a href="<?php echo url('/perfil?id='); ?><?php echo (int) $usuario_id; ?>">
                 <button type="button" class="btn-voltar">Voltar ao perfil</button>
             </a>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -15,17 +15,17 @@
 
 <p><b>Categoria:</b> <?php echo e($servico['categoria']); ?></p>
 <p><b>Modalidade:</b> <?php echo e(modalidadeLabel($servico['modalidade'])); ?></p>
-<p><b>PreÃ§o:</b> <?php echo e($servico['preco']); ?></p>
+<p><b>Preço:</b> <?php echo e($servico['preco']); ?></p>
 <p><b>Cidade:</b> <?php echo e($servico['cidade']); ?> / <?php echo e($servico['uf']); ?></p>
 <p><b>Prestador / Empresa:</b> <?php echo e($servico['nome'] ?: $servico['email']); ?></p>
 
-<p><b>DescriÃ§Ã£o:</b></p>
+<p><b>Descrição:</b></p>
 <p class="servico-descricao"><?php echo e($servico['descricao']); ?></p>
 
 <div class="servico-botoes">
 
 <?php if(!isset($_SESSION['usuario_id'])): ?>
-    <p style="color: #facc15; font-weight:bold;">FaÃ§a login para se candidatar a esta vaga.</p>
+    <p style="color: #facc15; font-weight:bold;">Faça login para se candidatar a esta vaga.</p>
 <?php elseif($_SESSION['tipo_usuario']=="buscador"): ?>
 
     <?php if($candidatura_status == ""): ?>

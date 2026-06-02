@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -39,16 +39,16 @@
 <input type="password" name="senha" placeholder="Senha" required>
 
 <select name="tipo_usuario" required>
-<option value="">Selecione o tipo de usuÃ¡rio</option>
-<option value="buscador">Buscador de serviÃ§o</option>
-<option value="prestador">Prestador de serviÃ§o</option>
+<option value="">Selecione o tipo de usuário</option>
+<option value="buscador">Buscador de serviço</option>
+<option value="prestador">Prestador de serviço</option>
 </select>
 
 <input type="text" name="telefone" placeholder="Telefone" required>
 
 <input type="text" name="cep" placeholder="CEP" required>
 
-<input type="text" name="trabalho" placeholder="ProfissÃ£o / ServiÃ§o" required>
+<input type="text" name="trabalho" placeholder="Profissão / Serviço" required>
 
 <button type="submit" class="btn">Cadastrar</button>
 
@@ -59,7 +59,7 @@
 <br>
 
 <a href="<?php echo url('/home'); ?>">
-<button class="btn-voltar">Voltar ao inÃ­cio</button>
+<button class="btn-voltar">Voltar ao início</button>
 </a>
 
 </div>

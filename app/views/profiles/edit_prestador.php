@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -41,7 +41,7 @@ value="<?php echo e($dados['categoria'] ?? ''); ?>">
 <textarea name="quem_sou" placeholder="Sobre mim"><?php echo e($dados['quem_sou'] ?? ''); ?></textarea>
 
 <div class="editar-botoes">
-<button type="submit">Salvar alteraÃ§Ãµes</button>
+<button type="submit">Salvar alterações</button>
 
 <a href="<?php echo url('/perfil?id='); ?><?php echo (int) $usuario_id; ?>">
 <button type="button" class="btn-voltar">Voltar ao Perfil</button>

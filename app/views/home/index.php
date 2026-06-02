@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -13,8 +13,8 @@
 
         <?php if(isset($_SESSION['usuario_id']) && $_SESSION['tipo_usuario'] == "prestador"): ?>
         <div class="botoes-left">
-            <a href="<?php echo url('/vagas/criar'); ?>"><button>Criar serviÃ§o</button></a>
-            <a href="<?php echo url('/vagas/minhas'); ?>"><button>Meus serviÃ§os</button></a>
+            <a href="<?php echo url('/vagas/criar'); ?>"><button>Criar serviço</button></a>
+            <a href="<?php echo url('/vagas/minhas'); ?>"><button>Meus serviços</button></a>
         </div>
         <?php elseif(isset($_SESSION['usuario_id']) && $_SESSION['tipo_usuario'] == "buscador"): ?>
         <div class="botoes-left">
@@ -32,7 +32,7 @@
 
         <div class="botoes-right">
             <div class="dropdown">
-                <button class="dropbtn" onclick="toggleMenu()">Perfil â–¼</button>
+                <button class="dropbtn" onclick="toggleMenu()">Perfil ▼</button>
                 <div class="dropdown-content" id="perfilMenu">
                     <a href="<?php echo url('/perfil?id='); ?><?php echo (int) $_SESSION['usuario_id']; ?>">Meu perfil</a>
                     <?php if($_SESSION['tipo_usuario'] == "prestador"): ?>
@@ -56,8 +56,8 @@
 
 <div class="container">
     <h1>Bem-vindo ao meu site</h1>
-    <h2>ServiÃ§os disponÃ­veis</h2>
-    <p class="data">Hoje Ã© <?php echo date("d/m/Y"); ?></p>
+    <h2>Serviços disponíveis</h2>
+    <p class="data">Hoje é <?php echo date("d/m/Y"); ?></p>
 
     <form method="GET" action="<?php echo url('/home'); ?>" class="search-box">
   <div class="search-container">
@@ -66,11 +66,11 @@
         type="text"
         id="busca"
         name="busca"
-        placeholder="Buscar serviÃ§os, categorias ou usuÃ¡rios"
+        placeholder="Buscar serviços, categorias ou usuários"
         value="<?php echo e($busca); ?>"
         oninput="this.nextElementSibling.style.display = this.value ? 'block' : 'none';"
       >
-      <button type="button" class="clear-btn" onclick="this.previousElementSibling.value=''; this.style.display='none';" style="display:<?php echo $busca ? 'block' : 'none'; ?>">âœ–</button>
+      <button type="button" class="clear-btn" onclick="this.previousElementSibling.value=''; this.style.display='none';" style="display:<?php echo $busca ? 'block' : 'none'; ?>">✖</button>
     </div>
     <button type="submit" class="btn-buscar">Buscar</button>
   </div>
@@ -83,17 +83,17 @@
             <h3><?php echo e($servico['titulo']); ?></h3>
             <p><b>Categoria:</b> <?php echo e($servico['categoria']); ?></p>
             <p><b>Modalidade:</b> <?php echo e(modalidadeLabel($servico['modalidade'])); ?></p>
-            <p><b>PreÃ§o:</b> <?php echo e($servico['preco']); ?></p>
+            <p><b>Preço:</b> <?php echo e($servico['preco']); ?></p>
             <p><b>Prestador / Empresa:</b> <?php echo e($servico['nome'] ?: $servico['email']); ?></p>
 
             <a href="<?php echo url('/vagas/detalhes?id='); ?><?php echo (int) $servico['id']; ?>">
-                <button class="btn">Ver serviÃ§o</button>
+                <button class="btn">Ver serviço</button>
             </a>
         </div>
         <?php endforeach; ?>
     </div>
     <?php else: ?>
-    <p>Nenhum serviÃ§o encontrado.</p>
+    <p>Nenhum serviço encontrado.</p>
     <?php endif; ?>
 </div>
 

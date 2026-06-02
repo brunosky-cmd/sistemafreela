@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -44,11 +44,11 @@
     <?php endforeach; ?>
     </div>
 <?php else: ?>
-    <p class="sem-vagas">VocÃª ainda nÃ£o se candidatou a nenhuma vaga.</p>
+    <p class="sem-vagas">Você ainda não se candidatou a nenhuma vaga.</p>
 <?php endif; ?>
 
 <a href="<?php echo url('/home'); ?>">
-    <button class="btn-voltar-candidatura">Voltar ao inÃ­cio</button>
+    <button class="btn-voltar-candidatura">Voltar ao início</button>
 </a>
 </div>
 

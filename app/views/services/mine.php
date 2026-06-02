@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 <meta charset="UTF-8">
-<title>Meus ServiÃ§os</title>
+<title>Meus Serviços</title>
 <link rel="stylesheet" href="<?php echo asset('css/style.css'); ?>">
 <link rel="stylesheet" href="<?php echo asset('css/meus_servicos.css'); ?>">
 </head>
@@ -14,8 +14,8 @@
 <div class="nav-left">
     <div class="logo">Meu Site em PHP</div>
     <div class="botoes-left">
-        <a href="<?php echo url('/home'); ?>"><button>Voltar ao inÃ­cio</button></a>
-        <a href="<?php echo url('/vagas/criar'); ?>"><button class="btn-criar-servico">Criar ServiÃ§o</button></a>
+        <a href="<?php echo url('/home'); ?>"><button>Voltar ao início</button></a>
+        <a href="<?php echo url('/vagas/criar'); ?>"><button class="btn-criar-servico">Criar Serviço</button></a>
     </div>
 </div>
 
@@ -28,7 +28,7 @@
 
     <div class="botoes-right">
         <div class="dropdown">
-            <button class="dropbtn" onclick="toggleMenu()">Perfil â–¼</button>
+            <button class="dropbtn" onclick="toggleMenu()">Perfil ▼</button>
             <div class="dropdown-content" id="perfilMenu">
                 <a href="<?php echo url('/perfil?id='); ?><?php echo (int) $_SESSION['usuario_id']; ?>">Meu perfil</a>
                 <a href="<?php echo url('/perfil/editar'); ?>">Editar perfil</a>
@@ -41,7 +41,7 @@
 </nav>
 
 <div class="container">
-<h1>Meus ServiÃ§os</h1>
+<h1>Meus Serviços</h1>
 
 <?php if(count($servicos) > 0): ?>
 <div class="servicos-grid">
@@ -52,7 +52,7 @@
 
     <p><strong>Categoria:</strong> <?php echo e($row['categoria']); ?></p>
     <p><strong>Modalidade:</strong> <?php echo e(modalidadeLabel($row['modalidade'])); ?></p>
-    <p><strong>PreÃ§o:</strong> <?php echo e($row['preco']); ?></p>
+    <p><strong>Preço:</strong> <?php echo e($row['preco']); ?></p>
     <p><strong>Cidade/UF:</strong> <?php echo e(($row['cidade'] ?? '') . " / " . ($row['uf'] ?? '')); ?></p>
     <p><?php echo e($row['descricao']); ?></p>
 
@@ -60,7 +60,7 @@
         <a href="<?php echo url('/vagas/editar?id='); ?><?php echo (int) $row['id']; ?>">
             <button class="ms-btn">Editar</button>
         </a>
-        <a href="<?php echo url('/vagas/excluir?id='); ?><?php echo (int) $row['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir este serviÃ§o?');">
+        <a href="<?php echo url('/vagas/excluir?id='); ?><?php echo (int) $row['id']; ?>" onclick="return confirm('Tem certeza que deseja excluir este serviço?');">
             <button class="ms-btn-excluir">Excluir</button>
         </a>
         <a href="<?php echo url('/candidaturas?servico_id='); ?><?php echo (int) $row['id']; ?>">
@@ -72,7 +72,7 @@
 
 </div>
 <?php else: ?>
-<p class="sem-servicos">Nenhum serviÃ§o cadastrado ainda.</p>
+<p class="sem-servicos">Nenhum serviço cadastrado ainda.</p>
 <?php endif; ?>
 
 </div>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
@@ -20,7 +20,7 @@
         <button type="submit" class="btn">Entrar</button>
     </form>
 
-    <p>NÃ£o possui conta?</p>
+    <p>Não possui conta?</p>
 
     <a href="<?php echo url('/cadastro'); ?>">
         <button class="btn">Cadastre-se</button>
